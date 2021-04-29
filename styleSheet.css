@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  /*MEDIA SCREEN SIZES*/
+  
+  @media screen and (max-width: 768px) {
+    .responsivePageTwo {
+      flex-direction: column;
+      height: 33.33%;
+      flex: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 769px){
+    .responsivePageTwo {
+      height: 50%;
+      width: 33.33%;
+      float: left;
+    }
+  } 
+
+
+  /* HTML DEFAULT*/
+
+    body {
+       margin: 0;
+       padding: 0;
+    }
+    
+    ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    background-color: #333;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+    }
+  
+    li {
+    float: left;
+    }
+  
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+  
+
+  /* CUSTOM CSS CLASSES */
+
+
+
+ #responsive{
+  top: 30%;
+  left: 40%;
+  bottom: 60%;
+  right: 40%;
+  background-color: black;
+  padding: 5px;
+  height: 40%;
+  border: 1px black;
+  z-index: 1;
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0.0; 
+}
+
+
+.responsivePageTwo{
+/*
+top: 50%;
+position: relative;
+bottom: 40%;
+*/
+background-color: black;
+padding: 1rem;
+z-index: 1;
+}
+
+#firstAnimationPageTwo{
+  visibility: hidden;
+  opacity: 0.0; 
+  
+}
+#secondAnimationPageTwo{
+  visibility: hidden;
+  opacity: 0.0;
+  
+}
+#thirdAnimationPageTwo{
+  visibility: hidden;
+  opacity: 0.0; 
+}
+
+
+
+#sectionTwoPageTwo::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+.section {
+      position: relative;
+      z-index: 0;
+      background-color: #ccc;
+    }
+
+#secao-02 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+#secao-03 {
+      background-color: #000;
+    }
+#secao-04 {
+    background-color: #ccc;
+   }
+
+
+
+
+
+
+
